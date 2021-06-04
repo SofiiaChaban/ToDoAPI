@@ -16,6 +16,7 @@ const updateTodoSchema = Joi.object({
     description: Joi.string()
 })
 
+// Usually, modules for node.js are exported at the end of the file, why do you export them in the beginning?
 module.exports = {
     getAllTodos,
     createTodo,
