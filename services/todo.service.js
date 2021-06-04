@@ -36,6 +36,7 @@ async function updateTodo(todoId, payload) {
         throw badRequest(`todo with name '${payload.name}' already exists`)
     }
 
+//    you can just use Todo.updateOne() method to update todo, it would be much simpler)
     Object.entries(payload || {}).forEach(([key, value]) => {
         todo[key] = value;
     });
