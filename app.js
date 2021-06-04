@@ -2,6 +2,9 @@ const express = require('express')
 const mongoose = require('mongoose');
 const app = express()
 
+// Please delete you personal creds from here, it's really dangerous to keep them open
+// use this module for working with credentials https://www.npmjs.com/package/dotenv
+
 const dev_db_url = 'mongodb+srv://sofiia:qw16erty26@cluster0.mtqem.mongodb.net/tc?retryWrites=true&w=majority';
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 const dbOptions = { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false };
